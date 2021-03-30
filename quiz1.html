@@ -1,13 +1,37 @@
 <html>
-  <head>  
-    <title>My Document</title>  
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="quiz1.js">         </script> 
-    </head> 
-    <body>
-        <input id="btn" type="button" value="Try it" onclick="newbutton()">   
-     
-    <h1 id="cgu">CGU</h1>   
-    <p id="bb">好棒棒</p> 
-</body>  
+
+<head>
+  </script>
+  <title>My Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+  <input id="btn" type="button" value="Try it" onclick="newbutton()">
+  <h1 id="cgu">CGU</h1>
+  <p id="bb">好棒棒</p>
+  <script>
+  function change()
+  { $("#cgu").html("CSIE@CGU");
+  $("#bb").html("怎麼那麼棒！！");
+  /*var header = document.getElementById("cgu");
+  header.innerHTML = "CSIE@CGU";
+  var $para = $("#bb")[0];
+  para.innerHTML = "怎麼那麼棒！！"; */
+  }
+  function newbutton(){
+  var change_button="<button id='change'>Change this document</button>";
+  $("body").append(change_button);
+  $("#change").click(change);
+  /*var btn = document.createElement("BUTTON");
+  btn.innerHTML = "Change this document";
+  document.body.appendChild(btn);
+  btn.addEventListener("click",change);
+  */
+  }
+
+  </script>
+</body>
+
 </html>
